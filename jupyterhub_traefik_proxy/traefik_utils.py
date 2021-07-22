@@ -3,7 +3,6 @@ import string
 from tempfile import NamedTemporaryFile
 from traitlets import Unicode
 from urllib.parse import unquote
-
 import escapism
 import toml
 
@@ -151,7 +150,6 @@ def persist_static_conf(file, static_conf_dict):
 def persist_routes(file, routes_dict):
     with atomic_writing(file) as config_fd:
         toml.dump(routes_dict, config_fd)
-
 
 def load_routes(file):
     try:

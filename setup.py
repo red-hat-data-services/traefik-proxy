@@ -76,6 +76,7 @@ setup(
             "traefik_consul = jupyterhub_traefik_proxy:TraefikConsulProxy",
             "traefik_etcd = jupyterhub_traefik_proxy:TraefikEtcdProxy",
             "traefik_toml = jupyterhub_traefik_proxy:TraefikTomlProxy",
+            "traefik_toml_cm = jupyterhub_traefik_proxy:TraefikTomlConfigmapProxy",
         ]
     },
 )

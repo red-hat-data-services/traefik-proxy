@@ -94,7 +94,7 @@ class TraefikProxy(Proxy):
     traefik_api_hashed_password = Unicode()
 
     check_route_timeout = Integer(
-        30,
+        60,
         config=True,
         help="""Timeout (in seconds) when waiting for traefik to register an updated route.""",
     )

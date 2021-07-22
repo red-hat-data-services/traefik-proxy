@@ -3,3 +3,4 @@ escapism
 jupyterhub>=0.9
 passlib
 toml
+kubernetes
